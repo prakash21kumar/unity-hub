@@ -21,7 +21,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "npm install && npm start",
+    "build:client": "cd ../client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
