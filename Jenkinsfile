@@ -14,7 +14,7 @@ pipeline {
 
       }
       steps {
-        sh 'npm install'
+        sh 'cd server && npm install && npm start'
         echo 'Installing '
       }
     }
